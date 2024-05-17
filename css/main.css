@@ -22,10 +22,10 @@
 /* 
     - overlay
     - opacity hover
+    - hover effect 1 (left to right)
+    - hover effect 2 (top to bottom)
     - section header
     - section padding
-    - hover effect 1 (left to right)
-    - hover effect 1 (top to bottom)
 */
 
 .overlay {
@@ -111,6 +111,11 @@
     background: #6195FF;
 }
 
+
+.pd-y {
+    padding: 120px 0;
+}
+
 /* 2- General Styles */
 * {
     margin: 0;
@@ -141,10 +146,6 @@ button {
     font-family: inherit;
 }
 
-.pd-y {
-    padding: 120px 0;
-}
-
 ul {
     list-style: none;
 }
@@ -158,7 +159,7 @@ a {
 .header {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -691,6 +692,7 @@ a {
     width: 30%;
     float: left;
     background: #e8e8e8;
+    z-index: 1;
     padding: 40px 20px;
     text-align: center;
 }
@@ -748,10 +750,6 @@ a {
 .team-item:hover .team-overlay {
     visibility: visible;
     opacity: 1;
-}
-
-.team-item.tb-effect {
-    z-index: 1;
 }
 
 .team-item:hover .team-info-title {
